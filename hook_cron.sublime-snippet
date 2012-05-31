@@ -1,0 +1,13 @@
+<snippet>
+  <scope>source.php</scope>
+	<content><![CDATA[
+/*
+** Implementation of hook_cron
+*/
+function ${1:hook}_cron() {
+  // Short-running operation example, not using a queue:
+  variable_set('lastrun', now());
+}
+]]></content>
+	<tabTrigger>hook_cron</tabTrigger>
+</snippet>

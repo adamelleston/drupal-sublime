@@ -1,0 +1,22 @@
+<snippet>
+  <scope>source.php</scope>
+	<content><![CDATA[
+/*
+** Implementation of hook_install
+*/
+function ${1:hook}_install() {
+  // Populate the default {node_access} record.
+  db_insert('node_access')
+    ->fields(array(
+    'nid' => 0,
+    'gid' => 0,
+    'realm' => 'all',
+    'grant_view' => 1,
+    'grant_update' => 0,
+    'grant_delete' => 0,
+  ))
+    ->execute();
+}
+]]></content>
+	<tabTrigger>hook_install</tabTrigger>
+</snippet>

@@ -1,0 +1,18 @@
+<snippet>
+  <scope>source.php</scope>
+	<content><![CDATA[
+/*
+** Implementation of hook_node_info
+*/
+function ${1:hook}_node_info() {
+  return array(
+    'blog' => array(
+      'name' => t('Blog entry'),
+      'base' => 'blog',
+      'description' => t('Use for multi-user blogs. Every user gets a personal blog.'),
+    ),
+  );
+}
+]]></content>
+	<tabTrigger>hook_node_info</tabTrigger>
+</snippet>

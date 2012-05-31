@@ -1,0 +1,12 @@
+<snippet>
+  <scope>source.php</scope>
+	<content><![CDATA[
+/*
+** Implementation of hook_uninstall
+*/
+function ${1:hook}_uninstall() {
+  variable_del('upload_file_types');
+}
+]]></content>
+	<tabTrigger>hook_uninstall</tabTrigger>
+</snippet>

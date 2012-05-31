@@ -1,0 +1,12 @@
+<snippet>
+  <scope>source.php</scope>
+	<content><![CDATA[
+/*
+** Implementation of hook_enable
+*/
+function ${1:hook}_enable() {
+  variable_set('mymodule', 'active')
+}
+]]></content>
+	<tabTrigger>hook_enable</tabTrigger>
+</snippet>

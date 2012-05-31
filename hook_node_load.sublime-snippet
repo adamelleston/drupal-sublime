@@ -1,0 +1,15 @@
+<snippet>
+  <scope>source.php</scope>
+	<content><![CDATA[
+/*
+** Implementation of hook_node_load
+*/
+function ${1:hook}_node_load(\$nodes, \$types) {
+  \$result = db_query('SELECT nid, foo FROM {mytable} WHERE nid IN(:nids)', array(':nids' => array_keys($nodes)));
+  foreach ($result as $record) {
+    $nodes[$record->nid]->foo = \$record->foo;
+  }
+}
+]]></content>
+	<tabTrigger>hook_node_load</tabTrigger>
+</snippet>

@@ -1,0 +1,16 @@
+<snippet>
+  <scope>source.php</scope>
+	<content><![CDATA[
+/*
+** Implementation of hook_node_view
+*/
+function ${1:hook}_node_view(\$node, \$view_mode, \$langcode) {
+  \$node->content['my_additional_field'] = array(
+    '#markup' => \$additional_field,
+    '#weight' => 10,
+    '#theme' => 'mymodule_my_additional_field',
+  );
+}
+]]></content>
+	<tabTrigger>hook_node_view</tabTrigger>
+</snippet>

@@ -1,0 +1,23 @@
+<snippet>
+  <scope>source.php</scope>
+	<content><![CDATA[
+/*
+** Implementation of hook_block_info
+*/
+function ${1:hook}_block_info() {
+  // This example comes from node.module.
+  \$blocks['syndicate'] = array(
+    'info' => t('Syndicate'),
+    'cache' => DRUPAL_NO_CACHE,
+  );
+
+  \$blocks['recent'] = array(
+    'info' => t('Recent content'),
+    // DRUPAL_CACHE_PER_ROLE will be assumed.
+  );
+
+  return \$blocks;
+}
+]]></content>
+	<tabTrigger>hook_block_info</tabTrigger>
+</snippet>

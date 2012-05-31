@@ -1,0 +1,12 @@
+<snippet>
+  <scope>source.php</scope>
+	<content><![CDATA[
+/*
+** Implementation of hook_disable
+*/
+function ${1:hook}_disable() {
+  variable_del('mymodule', 'active')
+}
+]]></content>
+	<tabTrigger>hook_disable</tabTrigger>
+</snippet>

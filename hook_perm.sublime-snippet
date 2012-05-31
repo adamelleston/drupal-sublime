@@ -1,0 +1,17 @@
+<snippet>
+  <scope>source.php</scope>
+	<content><![CDATA[
+/*
+** Implementation of hook_perm
+*/
+function ${1:hook}_permission() {
+  return array(
+    'administer my module' => array(
+      'title' => t('Administer my module'),
+      'description' => t('Perform administration tasks for my module.'),
+    ),
+  );
+}
+]]></content>
+	<tabTrigger>hook_perm</tabTrigger>
+</snippet>
