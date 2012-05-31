@@ -1,0 +1,19 @@
+Drupal code snippets for use with Sublime Text 2
+------------------------------------------------
+To use simply clone this repo into your user folder in Sublime Text 2.
+
+The easiest way to find out where this is to Go to "Preferences" in the top menu then click "Browse packages..." which then loads a directory browser from here find the folder called "User". This is where you need to have these files.
+
+New snippets
+------------
+Going forward I will be updating this repo with other common hook and theme overrides.
+
+Please feel free to fork this repo and commit your additions
+
+or
+
+Email me at adamelleston@gmail.com
+
+or
+
+Put a ticket in the issue queue and mark it as an enhancement
